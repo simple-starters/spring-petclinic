@@ -1,29 +1,3 @@
 accelerator:
   displayName: Spring PetClinic
   description: A sample Spring-based application
-  iconUrl: https://github.com/scothis/spring-petclinic/raw/main/src/main/resources/static/resources/images/pets.png
-  tags:
-    - java
-    - spring
-
-  # options for the UI
-  options:
-    - name: deploymentType
-      description: Type of deployment resource artifacts to generate
-      dataType: string
-      defaultValue: none
-      inputType: select
-      choices:
-        none: "No deployment artifacts"
-        knative: "Knative service resource"
-        kubernetes: "Kubernetes service and deployment resources"
-    - name: includeSkaffold
-      description: Include a skaffold configuration file
-      dataType: boolean
-      defaultValue: false
-      inputType: toggle
-    - name: serviceName
-      description: The name of the service
-      dataType: string
-      defaultValue: mckesson-service-template
-      inputType: text

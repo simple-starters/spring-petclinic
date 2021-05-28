@@ -8,7 +8,7 @@ metadata:
 spec:
   git:
     # update when code is pushed to a new location
-    url: https://github.com/scothis/spring-petclinic.git
+    url: https://github.com/simple-starters/spring-petclinic.git
     ref:
       branch: main
   env:

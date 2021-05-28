@@ -1,7 +1,7 @@
 accelerator:
   displayName: Spring PetClinic
   description: A sample Spring-based application
-  iconUrl: https://github.com/scothis/spring-petclinic/raw/main/src/main/resources/static/resources/images/pets.png
+  iconUrl: https://raw.githubusercontent.com/simple-starters/spring-petclinic/main/src/main/resources/static/resources/images/pets.png
   tags:
   - java
   - spring
@@ -25,5 +25,5 @@ accelerator:
   - name: serviceName
     description: The name of the service
     dataType: string
-    defaultValue: mckesson-service-template
+    defaultValue: service-template
     inputType: text

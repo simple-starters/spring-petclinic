@@ -6,3 +6,19 @@ accelerator:
   - java
   - spring
 
+  options:
+    - name: includeSkaffold
+      label: Skaffold deployment
+      display: true
+      description: Toggle "On" to include skaffold Kubernetes deployment configurations.
+      inputType: toggle
+      dataType: boolean
+      defaultValue: false
+
+engineV2:
+  excludes: ["accelerator*.yaml"]
+  sources:
+  - includes: [ "**" ]
+    excludes: [ "kubernetes/**/*.yaml", "skaffold.yaml" ]
+  - condition: "#includeSkaffold"
+    includes: [ "kubernetes/**/*.yaml", "skaffold.yaml" ]
